@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+    
+        <div class="frame">
+            
+            <div class="container" id="grid"></div>
+        </div>
+    
+        <div class="setting-card">
+            
+            <div class="setting-content">
+                <div class="top">
+                    <div class="title">
+                        <p>Tools</p>
+                    </div>
+                    <div class="setting">
+                        <label for="color">Color Selector</label>
+                        <input type="color" name="" id="color" value="#000000">
+                    </div>
+                    <div class="setting">
+                        <label for="eraser">Eraser</label>
+                        <button class="btn" id="eraser" value="#ffffff">
+                            <img src="./assets/eraser.png" alt="Eraser" srcset="">
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="title">
+                        <p>Settings</p>
+                    </div>
+                    <div class="setting">
+                        <label for="grid-size">Grid Size</label>
+                        <p id="grid-value-size"></p>
+                        <input type="range" name="" id="grid-size" value="8" min="8" max="64" step="8">
+                        <button class="btn" id="update-grid">Apply</button>
+                        <button class="btn" id="clear-grid">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="footer">
+            <p>Created by Roberto Gauna</p>
+        </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
